@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, Element } from "react-scroll";
+import AnchorLink from "react-anchor-link-smooth-scroll";  // Updated import
 
 const Gallery = () => {
     const [selectedImages, setSelectedImages] = useState([]);
@@ -33,48 +33,36 @@ const Gallery = () => {
                 <h1 className="text-4xl font-bold mb-4">Welcome to Our Salon!</h1>
                 <p className="text-lg mb-6">Explore our amazing services. Click the buttons below to view more.</p>
                 <div className="space-x-4">
-                    <Link
-                        to="salon"
-                        smooth={true}
-                        offset={-80}
-                        duration={500}
+                    <AnchorLink
+                        href="#salon"  // Changed to anchor link for smooth scroll
                         className="bg-pink-500 text-white py-2 px-6 rounded hover:bg-pink-600"
                     >
                         Salon
-                    </Link>
-                    <Link
-                        to="barber"
-                        smooth={true}
-                        offset={-80}
-                        duration={500}
+                    </AnchorLink>
+                    <AnchorLink
+                        href="#barber"
                         className="bg-pink-500 text-white py-2 px-6 rounded hover:bg-pink-600"
                     >
                         Barber
-                    </Link>
-                    <Link
-                        to="kinyozi"
-                        smooth={true}
-                        offset={-80}
-                        duration={500}
+                    </AnchorLink>
+                    <AnchorLink
+                        href="#kinyozi"
                         className="bg-pink-500 text-white py-2 px-6 rounded hover:bg-pink-600"
                     >
                         Kinyozi
-                    </Link>
-                    <Link
-                        to="nailart"
-                        smooth={true}
-                        offset={-80}
-                        duration={500}
+                    </AnchorLink>
+                    <AnchorLink
+                        href="#nailart"
                         className="bg-pink-500 text-white py-2 px-6 rounded hover:bg-pink-600"
                     >
                         Nail Art
-                    </Link>
+                    </AnchorLink>
                 </div>
             </div>
 
             {/* Sections */}
             <div className={`pt-24 ${isComparing ? "content-slide" : ""}`}>
-                <Element name="salon" className="section">
+                <div id="salon" className="section">
                     <h2 className="text-2xl font-bold text-pink-500 mb-4">Salon</h2>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                         {salonImages.map((image, index) => (
@@ -105,9 +93,9 @@ const Gallery = () => {
                             </div>
                         ))}
                     </div>
-                </Element>
+                </div>
 
-                <Element name="kinyozi" className="section">
+                <div id="kinyozi" className="section">
                     <h2 className="text-2xl font-bold text-pink-500 mb-4">Kinyozi</h2>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                         {kinyoziImages.map((image, index) => (
@@ -138,9 +126,9 @@ const Gallery = () => {
                             </div>
                         ))}
                     </div>
-                </Element>
+                </div>
 
-                <Element name="barber" className="section">
+                <div id="barber" className="section">
                     <h2 className="text-2xl font-bold text-pink-500 mb-4">Barber</h2>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                         {barberImages.map((image, index) => (
@@ -171,9 +159,9 @@ const Gallery = () => {
                             </div>
                         ))}
                     </div>
-                </Element>
+                </div>
 
-                <Element name="nailart" className="section">
+                <div id="nailart" className="section">
                     <h2 className="text-2xl font-bold text-pink-500 mb-4">Nail Art</h2>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                         {nailArtImages.map((image, index) => (
@@ -204,7 +192,7 @@ const Gallery = () => {
                             </div>
                         ))}
                     </div>
-                </Element>
+                </div>
             </div>
 
             {/* Image Comparison Section */}
