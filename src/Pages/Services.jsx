@@ -1,4 +1,5 @@
 import React from "react";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const ServicePage = () => {
     return (
@@ -20,6 +21,9 @@ const ServicePage = () => {
                     <p className="text-gray-600 mt-4">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id lectus a eros interdum suscipit.
                     </p>
+                    <AnchorLink href="#section1" className="mt-4 inline-block text-pink-500 hover:underline">
+                        Learn More
+                    </AnchorLink>
                 </div>
 
                 {/* Service 2 */}
@@ -31,6 +35,9 @@ const ServicePage = () => {
                     <p className="text-gray-600 mt-4">
                         Vivamus congue ligula et mauris sollicitudin, ut rutrum turpis fermentum. Cras tristique mauris vitae.
                     </p>
+                    <AnchorLink href="#section2" className="mt-4 inline-block text-pink-500 hover:underline">
+                        Learn More
+                    </AnchorLink>
                 </div>
 
                 {/* Service 3 */}
@@ -42,6 +49,9 @@ const ServicePage = () => {
                     <p className="text-gray-600 mt-4">
                         Suspendisse potenti. Nulla facilisi. Fusce nec sapien dolor. Donec in efficitur dui, sit amet suscipit.
                     </p>
+                    <AnchorLink href="#section3" className="mt-4 inline-block text-pink-500 hover:underline">
+                        Learn More
+                    </AnchorLink>
                 </div>
 
                 {/* Service 4 */}
@@ -53,6 +63,9 @@ const ServicePage = () => {
                     <p className="text-gray-600 mt-4">
                         Curabitur ac ligula condimentum, consequat nulla ac, ullamcorper urna. Pellentesque habitant morbi.
                     </p>
+                    <AnchorLink href="#section4" className="mt-4 inline-block text-pink-500 hover:underline">
+                        Learn More
+                    </AnchorLink>
                 </div>
 
                 {/* Service 5 */}
@@ -64,6 +77,9 @@ const ServicePage = () => {
                     <p className="text-gray-600 mt-4">
                         Nunc tincidunt urna in volutpat bibendum. Etiam sollicitudin, arcu vel venenatis tempor, lorem quam.
                     </p>
+                    <AnchorLink href="#section5" className="mt-4 inline-block text-pink-500 hover:underline">
+                        Learn More
+                    </AnchorLink>
                 </div>
 
                 {/* Service 6 */}
@@ -75,6 +91,9 @@ const ServicePage = () => {
                     <p className="text-gray-600 mt-4">
                         Quisque euismod dolor sit amet turpis finibus, vel convallis mauris tincidunt. Nulla non nisi auctor.
                     </p>
+                    <AnchorLink href="#section6" className="mt-4 inline-block text-pink-500 hover:underline">
+                        Learn More
+                    </AnchorLink>
                 </div>
             </div>
 
@@ -108,12 +127,12 @@ const ServicePage = () => {
             <div className="mt-24 text-center">
                 <h2 className="text-3xl font-semibold text-gray-800 mb-6">Ready to Get Started?</h2>
                 <p className="text-lg text-gray-600 mb-8">Contact us today to learn more about our services and how we can help you.</p>
-                <a
+                <AnchorLink
                     href="/contact"
                     className="bg-pink-500 text-white px-8 py-3 rounded-lg hover:bg-pink-600 transition duration-300"
                 >
                     Contact Us
-                </a>
+                </AnchorLink>
             </div>
         </div>
     );
