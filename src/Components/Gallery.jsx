@@ -4,11 +4,18 @@ const Gallery = () => {
     return (
         <section
             id="gallery"
-            className="relative bg-cover bg-center bg-fixed h-screen text-white"
-            style={{
-                backgroundImage: "url('path-to-your-featured-image.jpg')", // Replace with your image URL
-            }}
+            className="relative bg-cover bg-center h-screen text-white"
         >
+            {/* Background Video */}
+            <video
+                className="absolute inset-0 w-full h-full object-cover"
+                src="path-to-your-video.mp4" // Replace with your video URL
+                autoPlay
+                loop
+                muted
+                playsInline
+            />
+
             {/* Overlay */}
             <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
