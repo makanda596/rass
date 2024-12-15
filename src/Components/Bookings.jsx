@@ -14,9 +14,9 @@ const Bookings = () => {
                 {/* Left Side: Image */}
                 <div className="w-full lg:w-1/2 mb-8 lg:mb-0">
                     <img
-                        src="path-to-your-image.jpg"
-                        alt="Booking illustration"
-                        className="rounded-lg shadow-lg w-full h-full object-cover"
+                        src="https://res.cloudinary.com/db5pgr14l/image/upload/v1734165766/IMG-20241212-WA0072_vnqtlc.jpg"
+                        alt=""
+                        className="rounded-lg shadow-lg w-full h-[450px] object-cover hidden md:flex"
                     />
                 </div>
 

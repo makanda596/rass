@@ -1,6 +1,10 @@
 import React from "react";
-
+// import FacebookIcon from '@mui/icons-material/Facebook';
+// import InstagramIcon from '@mui/icons-material/Instagram';
+// import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 const Footer = () => {
+    const currentYear = new Date().getFullYear();
+
     return (
         <footer className="bg-gray-900 text-gray-300 py-10">
             <div className="container mx-auto px-6 lg:px-20">
@@ -35,7 +39,7 @@ const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                     {/* Brand Section */}
                     <div className="space-y-4">
-                        <h1 className="text-2xl font-bold text-white">YourBrand</h1>
+                        <h1 className="text-2xl font-bold text-white">Houseofnails</h1>
                         <p>
                             Transforming your ideas into reality with exceptional services. We are
                             committed to quality and innovation.
@@ -47,22 +51,22 @@ const Footer = () => {
                         <h2 className="text-lg font-semibold text-white mb-4">Quick Links</h2>
                         <ul className="space-y-2">
                             <li>
-                                <a href="#about" className="hover:text-blue-400 transition">
-                                    About Us
+                                <a href="/" className="hover:text-blue-400 transition">
+                                    Home
                                 </a>
                             </li>
                             <li>
-                                <a href="#services" className="hover:text-blue-400 transition">
+                                <a href="/services" className="hover:text-blue-400 transition">
                                     Services
                                 </a>
                             </li>
                             <li>
-                                <a href="#gallery" className="hover:text-blue-400 transition">
+                                <a href="/gallery" className="hover:text-blue-400 transition">
                                     Gallery
                                 </a>
                             </li>
                             <li>
-                                <a href="#contact" className="hover:text-blue-400 transition">
+                                <a href="/contact" className="hover:text-blue-400 transition">
                                     Contact
                                 </a>
                             </li>
@@ -76,10 +80,10 @@ const Footer = () => {
                             <li>
                                 Email:{" "}
                                 <a
-                                    href="mailto:info@yourbrand.com"
+                                    href="mailto:houseofnail17@gmail.com"
                                     className="hover:text-blue-400 transition"
                                 >
-                                    info@yourbrand.com
+                                    houseofnail17@gmail.com
                                 </a>
                             </li>
                             <li>
@@ -88,47 +92,44 @@ const Footer = () => {
                                     href="tel:+123456789"
                                     className="hover:text-blue-400 transition"
                                 >
-                                    +1 234 567 89
+                                    +254 70237 0615
                                 </a>
                             </li>
-                            <li>Address: 123 YourBrand Street, City, Country</li>
+                            <li>30100 Kesses, Eldoret City,kenya</li>
                         </ul>
                     </div>
 
                     {/* Social Media Section */}
-                    <div>
+                    {/* <div>
                         <h2 className="text-lg font-semibold text-white mb-4">Follow Us</h2>
-                        <div className="flex space-x-4">
+                        <div className="footer-media flex justify-center items-center space-x-6 mt-6">
                             <a
-                                href="#"
-                                className="text-gray-400 hover:text-blue-400 transition"
-                                aria-label="Facebook"
+                                href="https://www.instagram.com/glitch_lifestyle/profilecard/?igsh=Nzg1Z3hub2JuZmpp"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-gray-500 hover:text-pink-500 transition-colors duration-300"
                             >
-                                <i className="fab fa-facebook-f"></i>
+                                <InstagramIcon fontSize="medium" />
                             </a>
-                            <a
-                                href="#"
-                                className="text-gray-400 hover:text-blue-400 transition"
-                                aria-label="Twitter"
-                            >
-                                <i className="fab fa-twitter"></i>
-                            </a>
-                            <a
-                                href="#"
-                                className="text-gray-400 hover:text-blue-400 transition"
-                                aria-label="Instagram"
-                            >
-                                <i className="fab fa-instagram"></i>
-                            </a>
-                            <a
-                                href="#"
-                                className="text-gray-400 hover:text-blue-400 transition"
-                                aria-label="LinkedIn"
-                            >
-                                <i className="fab fa-linkedin"></i>
-                            </a>
-                        </div>
-                    </div>
+                    <a
+                        href="https://www.facebook.com/profile.php?id=100064606814634"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-500 hover:text-blue-500 transition-colors duration-300"
+                    >
+                        <FacebookIcon fontSize="medium" />
+                    </a>
+                    <a
+                        href="https://wa.me/+254 702 370615"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-500 hover:text-green-500 transition-colors duration-300"
+                    >
+                        <WhatsAppIcon fontSize="medium" />
+                    </a>
+                </div>
+
+            </div> */}
                 </div>
 
                 {/* Divider */}
@@ -137,11 +138,12 @@ const Footer = () => {
                 {/* Copyright */}
                 <div className="flex flex-col md:flex-row justify-between items-center mt-6">
                     <p className="text-sm">
-                        © {new Date().getFullYear()} YourBrand. All rights reserved.
+                        <p>&copy; {currentYear} Created by <a href="https://wa.me/+254742149060" target="_blank" rel="noopener noreferrer" className="text-pink-500 "> Makanda Worksoft</a>. All Rights Reserved.</p>
+
                     </p>
                 </div>
-            </div>
-        </footer>
+            </div >
+        </footer >
     );
 };
 

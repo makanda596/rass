@@ -5,7 +5,7 @@ const SpecialOffers = () => {
         <section id="special-offers" className="bg-pink-500 py-16 text-white">
             <div className="container mx-auto text-center">
                 <h2 className="text-4xl font-bold mb-8 text-maroon-500">Special Offers</h2>
-                <div className="flex flex-wrap justify-center space-x-8">
+                <div className="flex flex-wrap justify-center gap-8">
                     {/* First Visit Offer */}
                     <div className="offer-card bg-black p-6 rounded-lg shadow-lg w-full sm:w-80 md:w-64 mb-8 relative overflow-hidden group">
                         <h3 className="text-2xl font-semibold mb-4">First Visit Deal</h3>

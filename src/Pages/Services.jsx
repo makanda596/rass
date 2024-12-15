@@ -17,13 +17,13 @@ const ServicePage = () => {
                     <div className="mb-6">
                         <i className="fas fa-cogs text-4xl text-pink-500"></i>
                     </div>
-                    <h3 className="text-2xl font-semibold text-gray-800">Service 1</h3>
+                    <h3 className="text-2xl font-semibold text-gray-800">Tattoo</h3>
                     <p className="text-gray-600 mt-4">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id lectus a eros interdum suscipit.
                     </p>
-                    <AnchorLink href="#section1" className="mt-4 inline-block text-pink-500 hover:underline">
+                    <p className="mt-4 inline-block text-pink-500 hover:underline">
                         Learn More
-                    </AnchorLink>
+                    </p>
                 </div>
 
                 {/* Service 2 */}
@@ -31,13 +31,13 @@ const ServicePage = () => {
                     <div className="mb-6">
                         <i className="fas fa-laptop-code text-4xl text-pink-500"></i>
                     </div>
-                    <h3 className="text-2xl font-semibold text-gray-800">Service 2</h3>
+                    <h3 className="text-2xl font-semibold text-gray-800">Nail Art</h3>
                     <p className="text-gray-600 mt-4">
                         Vivamus congue ligula et mauris sollicitudin, ut rutrum turpis fermentum. Cras tristique mauris vitae.
                     </p>
-                    <AnchorLink href="#section2" className="mt-4 inline-block text-pink-500 hover:underline">
+                    <p className="mt-4 inline-block text-pink-500 hover:underline">
                         Learn More
-                    </AnchorLink>
+                    </p>
                 </div>
 
                 {/* Service 3 */}
@@ -45,9 +45,9 @@ const ServicePage = () => {
                     <div className="mb-6">
                         <i className="fas fa-rocket text-4xl text-pink-500"></i>
                     </div>
-                    <h3 className="text-2xl font-semibold text-gray-800">Service 3</h3>
-                    <p className="text-gray-600 mt-4">
-                        Suspendisse potenti. Nulla facilisi. Fusce nec sapien dolor. Donec in efficitur dui, sit amet suscipit.
+                    <h3 className="text-2xl font-semibold text-gray-800">Percing</h3>
+                    <p className="mt-4 inline-block text-pink-500 hover:underline">
+                        Learn More
                     </p>
                     <AnchorLink href="#section3" className="mt-4 inline-block text-pink-500 hover:underline">
                         Learn More
@@ -59,13 +59,13 @@ const ServicePage = () => {
                     <div className="mb-6">
                         <i className="fas fa-paint-brush text-4xl text-pink-500"></i>
                     </div>
-                    <h3 className="text-2xl font-semibold text-gray-800">Service 4</h3>
+                    <h3 className="text-2xl font-semibold text-gray-800">Salon</h3>
                     <p className="text-gray-600 mt-4">
                         Curabitur ac ligula condimentum, consequat nulla ac, ullamcorper urna. Pellentesque habitant morbi.
                     </p>
-                    <AnchorLink href="#section4" className="mt-4 inline-block text-pink-500 hover:underline">
+                    <p className="mt-4 inline-block text-pink-500 hover:underline">
                         Learn More
-                    </AnchorLink>
+                    </p>
                 </div>
 
                 {/* Service 5 */}
@@ -73,13 +73,13 @@ const ServicePage = () => {
                     <div className="mb-6">
                         <i className="fas fa-headset text-4xl text-pink-500"></i>
                     </div>
-                    <h3 className="text-2xl font-semibold text-gray-800">Service 5</h3>
+                    <h3 className="text-2xl font-semibold text-gray-800">Barber</h3>
                     <p className="text-gray-600 mt-4">
                         Nunc tincidunt urna in volutpat bibendum. Etiam sollicitudin, arcu vel venenatis tempor, lorem quam.
                     </p>
-                    <AnchorLink href="#section5" className="mt-4 inline-block text-pink-500 hover:underline">
+                    <p className="mt-4 inline-block text-pink-500 hover:underline">
                         Learn More
-                    </AnchorLink>
+                    </p>
                 </div>
 
                 {/* Service 6 */}
@@ -87,13 +87,13 @@ const ServicePage = () => {
                     <div className="mb-6">
                         <i className="fas fa-truck text-4xl text-pink-500"></i>
                     </div>
-                    <h3 className="text-2xl font-semibold text-gray-800">Service 6</h3>
+                    <h3 className="text-2xl font-semibold text-gray-800">Dreadlocks</h3>
                     <p className="text-gray-600 mt-4">
                         Quisque euismod dolor sit amet turpis finibus, vel convallis mauris tincidunt. Nulla non nisi auctor.
                     </p>
-                    <AnchorLink href="#section6" className="mt-4 inline-block text-pink-500 hover:underline">
+                    <p className="mt-4 inline-block text-pink-500 hover:underline">
                         Learn More
-                    </AnchorLink>
+                    </p>
                 </div>
             </div>
 
@@ -127,12 +127,12 @@ const ServicePage = () => {
             <div className="mt-24 text-center">
                 <h2 className="text-3xl font-semibold text-gray-800 mb-6">Ready to Get Started?</h2>
                 <p className="text-lg text-gray-600 mb-8">Contact us today to learn more about our services and how we can help you.</p>
-                <AnchorLink
+                <a
                     href="/contact"
                     className="bg-pink-500 text-white px-8 py-3 rounded-lg hover:bg-pink-600 transition duration-300"
                 >
                     Contact Us
-                </AnchorLink>
+                </a>
             </div>
         </div>
     );

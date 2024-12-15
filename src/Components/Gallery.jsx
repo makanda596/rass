@@ -1,5 +1,5 @@
-import React from "react";
-
+import React from "react"
+// import profile from '../assets/profile1.jpg'
 const Gallery = () => {
     return (
         <section
@@ -9,7 +9,7 @@ const Gallery = () => {
             {/* Background Video */}
             <video
                 className="absolute inset-0 w-full h-full object-cover"
-                src="path-to-your-video.mp4" // Replace with your video URL
+                src="https://res.cloudinary.com/db5pgr14l/video/upload/v1734164807/VID-20241212-WA0049_bdy0pr.mp4" // Replace with your video URL
                 autoPlay
                 loop
                 muted
@@ -34,6 +34,7 @@ const Gallery = () => {
                     View Gallery
                 </button>
             </div>
+            {/* <img src={profile} alt="profile" /> */}
         </section>
     );
 };

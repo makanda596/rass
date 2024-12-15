@@ -1,12 +1,6 @@
 import React, { useState, useEffect } from "react";
-
+import { images } from '../assets/data'
 const HeroSection = () => {
-    const images = [
-        "https://via.placeholder.com/1920x1080?text=Image+1",
-        "https://via.placeholder.com/1920x1080?text=Image+2",
-        "https://via.placeholder.com/1920x1080?text=Image+3",
-        "https://via.placeholder.com/1920x1080?text=Image+4",
-    ];
 
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -16,11 +10,11 @@ const HeroSection = () => {
         }, 4000); // Change image every 4 seconds
 
         return () => clearInterval(interval);
-    }, [images.length]);
+    }, []);
 
     return (
         <section
-            className="h-screen bg-cover bg-center relative"
+            className="h-screen bg-cover bg-center relative object-cover"
             style={{ backgroundImage: `url(${images[currentImageIndex]})` }}
         >
             <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white text-center">
@@ -30,6 +24,8 @@ const HeroSection = () => {
                     Book an Appointment
                 </button>
             </div>
+
+
         </section>
     );
 };

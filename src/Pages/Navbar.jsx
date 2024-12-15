@@ -14,7 +14,8 @@ const Navbar = () => {
                 <div className="container mx-auto flex justify-between items-center p-4">
                     {/* Logo */}
                     <div className="text-2xl font-bold text-pink-500">
-                        Beauty Studio
+                        Houseofnails
+
                     </div>
 
                     {/* Navigation Links */}
@@ -109,10 +110,10 @@ const Navbar = () => {
                             <li>
                                 <a href="/contact" className="block text-pink-300 hover:text-pink-400 transition">Contact</a>
                             </li>
-                            <li>
+                            <li className="flex justify-center">
                                 <button
                                     onClick={openPopup}
-                                    className="block bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded transition focus:outline-none"
+                                    className="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded transition focus:outline-none"
                                 >
                                     Book Now
                                 </button>

@@ -71,9 +71,9 @@ const ContactPage = () => {
                 {/* Image Section (Right) */}
                 <div className="lg:w-1/2 mt-8 lg:mt-0">
                     <img
-                        src="https://via.placeholder.com/500x400"
+                        src="https://res.cloudinary.com/db5pgr14l/image/upload/v1734165766/IMG-20241212-WA0072_vnqtlc.jpg"
                         alt="Contact Us"
-                        className="w-full h-full object-cover rounded-lg shadow-lg"
+                        className="w-full h-[450px] object-cover rounded-lg shadow-lg hidden md:flex"
                     />
                 </div>
             </div>
@@ -82,15 +82,15 @@ const ContactPage = () => {
             <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
                 <div className="bg-white p-8 rounded-lg shadow-lg text-center">
                     <h3 className="text-xl font-semibold text-gray-800">Our Office</h3>
-                    <p className="text-gray-600 mt-4">1234 Street Name, City, Country</p>
+                    <p className="text-gray-600 mt-4">30100 Kesses, Eldoret City</p>
                 </div>
                 <div className="bg-white p-8 rounded-lg shadow-lg text-center">
                     <h3 className="text-xl font-semibold text-gray-800">Phone Number</h3>
-                    <p className="text-gray-600 mt-4">(123) 456-7890</p>
+                    <p><a href="tel:+254 70237 0615" target="_blank" rel="noopener noreferrer">Phone: +254 70237 0615</a></p>
                 </div>
                 <div className="bg-white p-8 rounded-lg shadow-lg text-center">
                     <h3 className="text-xl font-semibold text-gray-800">Email Address</h3>
-                    <p className="text-gray-600 mt-4">contact@yourdomain.com</p>
+                    <p> <a href="mailto:houseofnail17@gmail.com" target="_blank" rel="noopener noreferrer">Email :houseofnail17@gmail.com</a></p>
                 </div>
             </div>
 
@@ -98,15 +98,14 @@ const ContactPage = () => {
             <div className="mt-12">
                 <h2 className="text-2xl font-bold text-gray-800 text-center mb-6">Find Us Here</h2>
                 <div className="w-full h-72">
+
                     <iframe
-                        className="w-full h-full rounded-lg"
-                        title="Map Location"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2946.6794962357884!2d-71.1583177!3d42.3600835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e37a407bfe2c5f%3A0x17954ffdf0b9b98d!2sBoston%2C%20MA!5e0!3m2!1sen!2sus!4v1613015282122!5m2!1sen!2sus"
-                        frameBorder="0"
-                        style={{ border: 0 }}
-                        allowFullScreen
-                        aria-hidden="false"
-                        tabIndex="0"
+                        title="This is a unique title"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1576.6853046217846!2d35.29025464007813!3d0.2903323000000033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1780f502e43959db%3A0x1e7494c4904df5ec!2sTBE%20Productions!5e1!3m2!1sen!2ske!4v1734239546668!5m2!1sen!2ske"
+                        className="w-full h-[450px] rounded-lg shadow-lg border-none"
+                        allowFullScreen=""
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
                     ></iframe>
                 </div>
             </div>
@@ -127,7 +126,7 @@ const ContactPage = () => {
                 </div>
             </div>
         </div>
-        
+
     );
 };
 
