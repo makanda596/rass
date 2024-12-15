@@ -44,7 +44,7 @@ const Reviews = () => {
                 </h2>
 
                 {/* Reviews Display */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 items-center">
                     {reviews.map((review) => (
                         <div
                             className="bg-gradient-to-r from-pink-300 to-purple-500 p-10 rounded-lg shadow-xl text-black"

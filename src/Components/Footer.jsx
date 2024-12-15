@@ -2,6 +2,8 @@ import React from "react";
 // import FacebookIcon from '@mui/icons-material/Facebook';
 // import InstagramIcon from '@mui/icons-material/Instagram';
 // import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa";
+
 const Footer = () => {
     const currentYear = new Date().getFullYear();
 
@@ -100,49 +102,49 @@ const Footer = () => {
                     </div>
 
                     {/* Social Media Section */}
-                    {/* <div>
+                    <div>
                         <h2 className="text-lg font-semibold text-white mb-4">Follow Us</h2>
-                        <div className="footer-media flex justify-center items-center space-x-6 mt-6">
+                        <div className=" flex  justify-center space-x-4">
                             <a
-                                href="https://www.instagram.com/glitch_lifestyle/profilecard/?igsh=Nzg1Z3hub2JuZmpp"
+                                href="https://www.facebook.com"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-gray-500 hover:text-pink-500 transition-colors duration-300"
+                                className="text-pink-500 hover:text-pink-400 transition text-lg"
                             >
-                                <InstagramIcon fontSize="medium" />
+                                <FaFacebook />
                             </a>
-                    <a
-                        href="https://www.facebook.com/profile.php?id=100064606814634"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-gray-500 hover:text-blue-500 transition-colors duration-300"
-                    >
-                        <FacebookIcon fontSize="medium" />
-                    </a>
-                    <a
-                        href="https://wa.me/+254 702 370615"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-gray-500 hover:text-green-500 transition-colors duration-300"
-                    >
-                        <WhatsAppIcon fontSize="medium" />
-                    </a>
+                            <a
+                                href="https://www.instagram.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-pink-500 hover:text-pink-400 transition text-lg"
+                            >
+                                <FaInstagram />
+                            </a>
+                            <a
+                                href="https://www.tiktok.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-pink-500 hover:text-pink-400 transition text-lg"
+                            >
+                                <FaTiktok />
+                            </a>
+                        </div>
+                    </div>
+
                 </div>
+            </div>
 
-            </div> */}
-                </div>
+            {/* Divider */}
+            <div className="border-t border-gray-700 mt-8"></div>
 
-                {/* Divider */}
-                <div className="border-t border-gray-700 mt-8"></div>
+            {/* Copyright */}
+            <div className="flex flex-col md:flex-row justify-center items-center mt-6">
+                <p className="text-sm justify-center">
+                    <p >&copy; {currentYear} Created by <a href="https://wa.me/+254742149060" target="_blank" rel="noopener noreferrer" className="text-pink-500 "> Makanda Worksoft</a>. All Rights Reserved.</p>
 
-                {/* Copyright */}
-                <div className="flex flex-col md:flex-row justify-between items-center mt-6">
-                    <p className="text-sm">
-                        <p>&copy; {currentYear} Created by <a href="https://wa.me/+254742149060" target="_blank" rel="noopener noreferrer" className="text-pink-500 "> Makanda Worksoft</a>. All Rights Reserved.</p>
-
-                    </p>
-                </div>
-            </div >
+                </p>
+            </div>
         </footer >
     );
 };

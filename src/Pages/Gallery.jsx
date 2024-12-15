@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { nailArtImages, salonImages, tatooImages, BarberImages } from "../assets/data";
 
@@ -12,6 +12,20 @@ const Gallery = () => {
     const closeModal = () => {
         setSelectedImage(null);
     };
+
+    // Close modal on Escape key press
+    useEffect(() => {
+        const handleKeyDown = (event) => {
+            if (event.key === "Escape") {
+                closeModal();
+            }
+        };
+
+        window.addEventListener("keydown", handleKeyDown);
+        return () => {
+            window.removeEventListener("keydown", handleKeyDown);
+        };
+    }, []);
 
     return (
         <div className="gallery-page">
@@ -76,11 +90,12 @@ const Gallery = () => {
                         <img
                             src={selectedImage}
                             alt="Selected"
-                            className="max-w-full max-h-full rounded shadow-lg"
+                            className="max-w-full max-h-screen rounded shadow-lg"
                         />
                         <button
                             onClick={closeModal}
-                            className="absolute top-4 right-4 bg-pink-500 text-white py-2 px-4 rounded-full hover:bg-pink-600"
+                            aria-label="Close image"
+                            className="absolute top-4 right-4 bg-pink-500 text-white py-2 px-4 rounded-full hover:bg-pink-600 focus:outline-none focus:ring focus:ring-pink-300"
                         >
                             Close
                         </button>
