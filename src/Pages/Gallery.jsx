@@ -38,7 +38,7 @@ const Gallery = () => {
             >
                 <h1 className="text-4xl font-bold mb-4">Welcome to Our Salon!</h1>
                 <p className="text-lg mb-6">Explore our amazing services. Click the buttons below to view more.</p>
-                <div className="space-x-4">
+                <div className="space-x-2 sm:">
                     <AnchorLink href="#salon" className="bg-pink-500 text-white py-2 px-6 rounded hover:bg-pink-600">
                         Salon
                     </AnchorLink>

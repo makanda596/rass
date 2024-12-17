@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaTiktok, FaWhatsapp } from "react-icons/fa"; // Correct import
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -43,6 +43,14 @@ const Navbar = () => {
 
                     {/* Social Media Links */}
                     <div className="hidden md:flex space-x-4">
+                        <a
+                            href="https://wa.me/+254702370615"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-pink-500 hover:text-pink-600 transition text-lg"
+                        >
+                            <FaWhatsapp /> {/* Correct WhatsApp icon */}
+                        </a>
                         <a
                             href="https://www.facebook.com"
                             target="_blank"
@@ -118,6 +126,9 @@ const Navbar = () => {
                                 </button>
                             </li>
                             <li className="flex justify-center space-x-4 mt-4">
+                                <a href="https://www.whatsapp.com" target="_blank" rel="noopener noreferrer">
+                                    <FaWhatsapp className="text-pink-500 hover:text-pink-400 text-lg" />
+                                </a>
                                 <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
                                     <FaFacebook className="text-pink-500 hover:text-pink-400 text-lg" />
                                 </a>

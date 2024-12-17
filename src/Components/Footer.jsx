@@ -1,8 +1,8 @@
 import React from "react";
 // import FacebookIcon from '@mui/icons-material/Facebook';
 // import InstagramIcon from '@mui/icons-material/Instagram';
+import { FaFacebook, FaInstagram, FaTiktok, FaWhatsapp } from "react-icons/fa"; // Correct import
 // import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa";
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
@@ -105,6 +105,14 @@ const Footer = () => {
                     <div>
                         <h2 className="text-lg font-semibold text-white mb-4">Follow Us</h2>
                         <div className=" flex  justify-center space-x-4">
+                            <a
+                                href="https://wa.me/+254702370615"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-pink-500 hover:text-pink-600 transition text-lg"
+                            >
+                                <FaWhatsapp /> {/* Correct WhatsApp icon */}
+                            </a>
                             <a
                                 href="https://www.facebook.com"
                                 target="_blank"

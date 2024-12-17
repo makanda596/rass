@@ -47,7 +47,7 @@ const Reviews = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 items-center">
                     {reviews.map((review) => (
                         <div
-                            className="bg-gradient-to-r from-pink-300 to-purple-500 p-10 rounded-lg shadow-xl text-black"
+                            className="bg-gradient-to-r from-pink-300 to-purple-500 p-2 rounded-lg shadow-xl text-black"
                             key={review.id}
                         >
                             <img
