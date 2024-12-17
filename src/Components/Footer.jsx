@@ -2,7 +2,7 @@ import React from "react";
 // import FacebookIcon from '@mui/icons-material/Facebook';
 // import InstagramIcon from '@mui/icons-material/Instagram';
 import { FaFacebook, FaInstagram, FaTiktok, FaWhatsapp } from "react-icons/fa"; // Correct import
-// import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();

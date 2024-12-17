@@ -4,7 +4,7 @@ const Reviews = () => {
     const reviews = [
         {
             id: 1,
-            name: "Jane Doe",
+            name: "mercy",
             rating: 5,
             feedback:
                 "Amazing service! The staff was professional and friendly. My experience exceeded all expectations!",
@@ -20,7 +20,7 @@ const Reviews = () => {
         },
         {
             id: 3,
-            name: "Emily Clark",
+            name: "Emily ",
             rating: 5,
             feedback:
                 "Truly a fantastic place! They made me feel special and the results were outstanding.",
@@ -28,7 +28,7 @@ const Reviews = () => {
         },
         {
             id: 4,
-            name: "Michael Lee",
+            name: "Michael ",
             rating: 4,
             feedback:
                 "Very good experience. The service was top-notch, and the staff was friendly.",
